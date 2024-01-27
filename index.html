@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <main>
+        <section class="side-image">
+            <div>
+                <img src="./wonderful-jakarta.png" alt="Wonderful Indonesia Logo">
+                <h1>Sign-Up Form</h1>
+            </div>
+            <p class="credit">Photo by Edo Nugroho from Unsplash</p>
+        </section>
+        <section class="form">
+            <div class="header">
+                <p class="disclaimer">This is not a real online service!</p>
+                <p>Come visit the wonderful city of Jakarta. Sign up here now!</p>
+            </div>
+            <div class="input-section">
+                <form id = "my-form">
+                    <div class="input">
+                        <label for="firstname">First name</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <div class="error" id="first-name-error"></div>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                        <div class="error" id="last-name-error"></div>
+                    </div>
+                    <div class="input">
+                        <label for="email">Last name</label>
+                        <input type="email" name="email" id="email" placeholder="abcdef@gmail.com" required>
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="input">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="88231805" required pattern="[0-9]{8}">
+                        <div class="error" id="tel-error"></div>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
+                        <div class="error" id="pw-error"></div>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
+                        <div class="error" id="confirm-pw-error"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="submit-section">
+                <button type="submit">Create Account</button>
+                <p>Already have an account?<a href="">LOG IN</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
