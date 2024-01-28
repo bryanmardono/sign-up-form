@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <main>
@@ -44,10 +48,16 @@
                     <div class="input">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" required="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
-                        <div class="error" id="pw-error"></div>
+                        <div class="error" id="pw-error">
+                            <p class="hidden" id="capital-error"></p>
+                            <p class="hidden" id="number-error"></p>
+                            <p class="hidden" id="lowercase-error"></p>
+                            <p class="hidden" id="symbol-error"></p>
+                            <p class="hidden" id="length-error"></p>
+                        </div>
                     </div>
                     <div class="input">
-                        <label for="password">Password</label>
+                        <label for="password">Confirm Password</label>
                         <input type="password" name="confirm-password" id="confirm-password" required="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
                         <div class="error" id="confirm-pw-error"></div>
                     </div>
@@ -55,9 +65,14 @@
             </div>
             <div class="submit-section">
                 <button type="submit">Create Account</button>
-                <p>Already have an account?<a href="">LOG IN</a></p>
+                <p>Already have an account?     <a href="">LOG IN</a></p>
+            </div>
+            <div class="footer">
+                <p>Designed by Bryan Mardono</p>
+                <a href="https://github.com/bryanmardono"><img src="./github-mark/github-mark.png" alt="Github Profile" class="footer-image"></a>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
